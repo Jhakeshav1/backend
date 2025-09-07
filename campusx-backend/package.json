@@ -1,0 +1,32 @@
+{
+  "name": "campusx-backend",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "build": "echo 'No build step required for Node.js'",
+    "test": "echo 'No tests specified'",
+    "lint": "echo 'No linting configured'",
+    "docker:build": "docker build -t campusx-backend .",
+    "docker:run": "docker run -p 4000:4000 campusx-backend"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.2",
+    "express-rate-limit": "^6.8.0",
+    "firebase-admin": "^11.10.1",
+    "helmet": "^7.0.0",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.0.0",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "socket.io": "^4.7.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
